@@ -183,11 +183,13 @@ $$
 | 交互分析 | `notebooks/analyse_genetique.ipynb` | 以上分析的 notebook 版本（已执行） |
 | 旧版分析存档 | `notebooks/archive/` | 整理前的 notebook（基于旧数据，含当时的图） |
 
-## 附：整理时对原始工程做的修改
+## 附：2026-11-16 重构记录
 
 1. **修正数据读取**（第 1 步）——这是影响结果的唯一实质性修改；
 2. 固定随机种子、支持命令行指定数据/输出路径、动态分配内存；
 3. CSV 提高精度（参数 6 位小数、适应度 8 位小数）并补记最终一代（第 0–500 代完整）；
 4. 输出误差指标（MAE/RMSE/MRE/NMSE）；
-5. 新增 Python 等价实现、分析脚本、notebook 与 README；
-6. 旧版分析 notebook 原样存档，便于对照。
+5. **可视化优化**：重画适应度演化（对数纵轴）、最优参数收敛、参数范围（min–max）、3D 参数分布（只显示个体数 ≥3 的区间）、拟合曲线与残差，并重整 notebook 结构；
+6. **函数模块化**：算法、分析、拟合评估分别封装进 `src/python/ga_lorentzian.py`、`analyse_results.py`、`fit_lorentzian.py`，函数可按职责单独导入复用（换数据/换谱线只需改参数）；
+7. 新增 Python 等价实现、notebook 与 README；
+8. 旧版分析 notebook 原样存档，便于对照。
