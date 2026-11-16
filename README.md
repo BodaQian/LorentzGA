@@ -195,16 +195,16 @@ LorentzGA/
 │   ├── c/
 │   │   └── genetic_algorithm.c     # C 版遗传算法（参考实现）
 │   └── python/
-│       ├── ga_lorentzian.py        # Python 版遗传算法（与 C 版逻辑一致）
+│       ├── ga_lorentzian.py        # Python 版遗传算法
 │       ├── analyse_results.py      # 适应度 / 参数收敛 / 参数分布作图
 │       └── fit_lorentzian.py       # 拟合曲线、残差、误差指标与电子密度
 ├── notebooks/
-│   ├── analyse_genetique.ipynb     # 当前分析（修正后数据，已执行）
+│   ├── analyse_genetique.ipynb     # 当前分析
 │   └── archive/
 │       ├── README.md               # 存档说明
-│       └── analyse_genetique_original.ipynb  # 整理前分析（含当时的图）
+│       └── analyse_genetique_original.ipynb  # 整理前分析
 ├── figures/                        # README 与分析脚本生成的图片
-├── results/                        # 运行输出（CSV、摘要，已被 .gitignore 忽略）
+├── results/                        # 运行输出（CSV、摘要）
 └── docs/
     ├── pipeline.md                 # 项目流程详解（从原始数据到结果）
     ├── sujet-projet-niveau-2.pdf   # 课程题目说明（法语）
