@@ -1,0 +1,6 @@
+# Python 依赖（建议 Python >= 3.9）
+# C 版只需 C99 编译器，不需要这些依赖
+numpy>=1.24
+pandas>=1.5
+matplotlib>=3.7
+scipy>=1.10

@@ -1,0 +1,13 @@
+# 统一换行符，避免 Windows 下 CRLF 造成的 diff 噪声
+* text=auto
+
+*.c        text eol=lf
+*.h        text eol=lf
+*.py       text eol=lf
+*.md       text eol=lf
+*.txt      text eol=lf
+*.csv      text eol=lf
+*.ipynb    text eol=lf
+
+*.pdf      binary
+*.png      binary

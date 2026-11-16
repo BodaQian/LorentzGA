@@ -1,0 +1,43 @@
+# ---------------- 运行输出（可由脚本重新生成，不提交） ----------------
+results/
+genetic_algorithm_data.csv
+*.csv
+
+# ---------------- C 编译产物 ----------------
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.idb
+*.ipch
+*.recipe
+*.tlog
+*.log
+x64/
+Debug/
+Release/
+
+# ---------------- Python / Jupyter ----------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.virtual_documents/
+.venv/
+venv/
+env/
+.python-version
+
+# ---------------- 编辑器 / 系统 ----------------
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.swp
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
